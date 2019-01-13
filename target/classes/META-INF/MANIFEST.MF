@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: shamjith.antholi
+Build-Jdk: 11.0.1
+Implementation-Title: SonarTest
+Implementation-Version: 1.0
+Implementation-Vendor-Id: com.shamjith.test
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/SonarTest
+Created-By: Maven Integration for Eclipse
+
