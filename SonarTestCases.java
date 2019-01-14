@@ -15,7 +15,7 @@ public class SonarTestCases extends TestCase{
 	public void testWordCounterFail() {
 		SimpleWordCounter simpleWordCounter = new SimpleWordCounter();
 		System.out.println("Testing 21........>>>");
-		assertEquals(25, simpleWordCounter.CountWordsInFile());
+		assertEquals(25, simpleWordCounter.CountWordsInFile()); 
 		
 	}
 
