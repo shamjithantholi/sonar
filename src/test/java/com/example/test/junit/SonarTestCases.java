@@ -1,18 +1,22 @@
 package com.example.test.junit;
 
-import static org.junit.Assert.*;
-
-import org.junit.Test;
-
 import com.example.test.sample.SimpleWordCounter;
 
-public class SonarTestCases {
+import junit.framework.TestCase;
 
-	@Test
-	public void testWordCounter() {
+public class SonarTestCases extends TestCase{
+
+	public void testWordCounterSuccess() {
 		SimpleWordCounter simpleWordCounter = new SimpleWordCounter();
-		System.out.println("Testing ........>>>");
+		System.out.println("Testing 1........>>>");
+		assertEquals(35, simpleWordCounter.CountWordsInFile());
+		
+	}
+	public void testWordCounterFail() {
+		SimpleWordCounter simpleWordCounter = new SimpleWordCounter();
+		System.out.println("Testing 21........>>>");
 		assertEquals(25, simpleWordCounter.CountWordsInFile());
+		
 	}
 
 }
