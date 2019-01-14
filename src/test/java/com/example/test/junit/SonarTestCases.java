@@ -1,21 +1,26 @@
 package com.example.test.junit;
 
-import com.example.test.sample.SimpleWordCounter;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
+import com.example.test.sample.OddOrEven;
 import junit.framework.TestCase;
 
+@RunWith(SpringRunner.class)
+@SpringBootTest
 public class SonarTestCases extends TestCase{
 
 	public void testWordCounterSuccess() {
-		SimpleWordCounter simpleWordCounter = new SimpleWordCounter();
-		System.out.println("Testing 1........>>>");
-		assertEquals(35, simpleWordCounter.CountWordsInFile());
+		OddOrEven oddOrEven = new OddOrEven();
+		System.out.println("Testing 3........>>>");
+		assertEquals(35, oddOrEven.IsEven(6));
 		
 	}
 	public void testWordCounterFail() {
-		SimpleWordCounter simpleWordCounter = new SimpleWordCounter();
-		System.out.println("Testing 21........>>>");
-		assertEquals(25, simpleWordCounter.CountWordsInFile());
+		OddOrEven oddOrEven = new OddOrEven();
+		System.out.println("Testing 4........>>>");
+		assertEquals(25, oddOrEven.IsEven(7));
 		
 	}
 
