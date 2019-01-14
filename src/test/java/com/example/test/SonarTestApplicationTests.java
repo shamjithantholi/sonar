@@ -27,8 +27,15 @@ public class SonarTestApplicationTests {
 	@Test
 	public void testWordCounterFail() {
 		SimpleWordCounter simpleWordCounter = new SimpleWordCounter();
-		System.out.println("Testing 21........>>>");
+		System.out.println("Testing 2........>>>");
 		assertEquals(25, simpleWordCounter.CountWordsInFile());
+		
+	}
+	@Test
+	public void testWordCounterFail() {
+		SimpleWordCounter simpleWordCounter = new SimpleWordCounter();
+		System.out.println("Testing 3........>>>");
+		assertEquals(26, simpleWordCounter.CountWordsInFile());
 		
 	}
 }
