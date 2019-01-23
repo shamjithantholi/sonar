@@ -1,1 +1,1 @@
-Find TextEdit in the Applications folder on your Mac computer. By default, it creates formatted documents saved in rich text format, but you can use it to create a plaintext file on a Mac. To do so, launch the program, click the "Format" menu and select "Make Plain Text1."
+Find TextEdit in the Applications folder on your Mac computer. By default, it creates formatted documents saved in rich text format, but you can use it to create a plaintext file on a Mac. To do so, launch the program, click the "Format" menu and select "Make Plain Text2."
